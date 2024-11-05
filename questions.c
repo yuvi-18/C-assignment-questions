@@ -359,3 +359,163 @@
 
 // 21. Write a program to demonstrate the use of arithmetic operators in C.
 
+// #include <stdio.h>
+
+// int main() {
+//     int a = 10, b = 3;
+//     float x = 5.5, y = 2.0;
+//     // Using integer arithmetic operators
+//     printf("Addition: %d\n",a + b);
+//     printf("Subtraction: %d\n",a - b);
+//     printf("Multiplication: %d\n",a * b);
+//     printf("Division: %d\n",a / b);
+//     printf("Modulus: %d\n",a % b);
+
+//     // Using floating-point arithmetic operators
+//     printf("Floating-point Addition: %.2f\n",x + y);
+//     printf("Floating-point Division: %.2f\n",x / y);
+//     return 0;
+// }
+
+
+
+
+
+// 22. What is the difference between ++i and i++? Demonstrate it with a program
+
+// Both operators are for increasing the value of i but they differ in when they increase the value of i.
+
+// ++i (pre-increment operator)
+// Increments the value of i first and then returns the incremented value.
+
+// i++ (post-increment operator)
+// Returns the current value of i, and then increments i after the value is used in the expression.
+
+// #include <stdio.h>
+
+// int main() {
+//     int i = 5;
+//     // Pre-increment
+//     printf("%d\n", i); // 5
+//     printf("%d\n", ++i);  // 6
+//     // Post-increment
+//     printf("%d\n", i++); // 6
+//     printf("%d\n", i); // 7
+//     return 0;
+// }
+
+
+
+
+
+// 23. Write a program to swap two variables using bitwise XOR
+// skipped
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int a, b;
+//     printf("Enter the value of a: ");
+//     scanf("%d", &a);
+//     printf("Enter the value of b: ");
+//     scanf("%d", &b);
+//     printf("Before swapping: a = %d, b = %d\n", a, b);
+//     // XOR swap algorithm
+//     a = a ^ b;  // Step 1: a now holds the result of a ^ b
+//     b = a ^ b;  // Step 2: b now holds the original value of a
+//     a = a ^ b;  // Step 3: a now holds the original value of b
+//     printf("After swapping: a = %d, b = %d\n", a, b);
+//     return 0;
+// }
+
+
+
+// 24. Write a program to find the maximum of two numbers using the conditional (ternary) operator.
+
+
+// #include <stdio.h>
+
+// int main(){
+//     int a = 8;
+//     int b = 54;
+//     a > b ? printf("%d", a) : printf("%d", b);
+//     return 0;
+// }
+
+
+
+
+
+// 25. Explain the difference between == and = operators with an example.
+
+// == is used as an equality  operator whereas = is an assignment operator.
+
+// #include <stdio.h>
+
+// int main(){
+//     int i = 12; // 12
+//     int n = 1;
+//     if (i == n)
+//     {
+//         printf("%d", i);
+//     }
+//     else
+//     {
+//         printf("%d", n); // 1
+//     }
+//     return 0;
+// }
+
+
+
+
+
+// 26. Write a program to check whether a number is even or odd using bitwise operators.
+
+// determine whether a number is even or odd using bitwise operators by checking the least significant bit (LSB) of the number. if lsb is 0 then it is even else it is odd.
+// This can be efficiently checked using the bitwise AND (&) operator. Specifically, the expression num & 1 will give 0 for even and 1 for odd.
+
+// #include <stdio.h>
+
+// int main() {
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     if (num & 1) {
+//         printf("%d is odd.\n", num);
+//     } else {
+//         printf("%d is even.\n", num);
+//     }
+//     return 0;
+// }
+
+
+
+
+
+// 27. Write a program that shifts a number left and right using the bitwise shift operator.
+
+
+#include <stdio.h>
+
+int main() {
+    int num, ls, rs;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Enter the number of positions to shift left: ");
+    scanf("%d", &ls);
+    printf("Enter the number of positions to shift right: ");
+    scanf("%d", &rs);
+
+    // Left Shift
+    int lsResult = num << ls;
+    printf("After left shifting by %d positions: %d\n", ls, lsResult);
+
+    // Right Shift
+    int rsResult = num >> rs;
+    printf("After right shifting by %d positions: %d\n", rs, rsResult);
+    
+    return 0;
+}
