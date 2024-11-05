@@ -713,26 +713,187 @@
 
 // 34. Write a program to find the result of a comparison between two floating-point numbers.
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    float num1, num2;
+// int main() {
+//     float num1, num2;
+//     printf("Enter the first floating-point number: ");
+//     scanf("%f", &num1);
+//     printf("Enter the second floating-point number: ");
+//     scanf("%f", &num2);
 
-    // Input two floating-point numbers
-    printf("Enter the first floating-point number: ");
-    scanf("%f", &num1);
+//     // Compare the two numbers
+//     if (num1 > num2) {
+//         printf("The first number (%.2f) is greater than the second number (%.2f).\n", num1, num2);
+//     } else if (num1 < num2) {
+//         printf("The first number (%.2f) is less than the second number (%.2f).\n", num1, num2);
+//     } else {
+//         printf("Both numbers are equal (%.2f).\n", num1);
+//     }
 
-    printf("Enter the second floating-point number: ");
-    scanf("%f", &num2);
+//     return 0;
+// }
 
-    // Compare the two numbers
-    if (num1 > num2) {
-        printf("The first number (%.2f) is greater than the second number (%.2f).\n", num1, num2);
-    } else if (num1 < num2) {
-        printf("The first number (%.2f) is less than the second number (%.2f).\n", num1, num2);
-    } else {
-        printf("Both numbers are equal (%.2f).\n", num1);
-    }
 
-    return 0;
-}
+
+
+
+
+// 35. Demonstrate the use of the modulus operator in finding the remainder
+
+// The modulus operator (%) is used in C to find the remainder when one number is divided by another.
+// remainder = dividend % divisor;
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int num1 = 10, num2 = 3, remainder;
+//     remainder = num1 % num2;
+//     printf("The remainder when %d is divided by %d is: %d\n", num1, num2, remainder);
+//     return 0;
+// }
+
+
+
+
+
+// 36. Write a program to perform bitwise AND, OR, XOR operations on two integers.
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int num1, num2;
+//     printf("Enter the first integer: ");
+//     scanf("%d", &num1);
+//     printf("Enter the second integer: ");
+//     scanf("%d", &num2);
+
+//     // bitwise AND
+//     int and_result = num1 & num2;
+
+//     // bitwise OR
+//     int or_result = num1 | num2;
+
+//     // bitwise XOR
+//     int xor_result = num1 ^ num2;
+
+//     printf("Bitwise AND: %d\n", num1, num2, and_result);
+//     printf("Bitwise OR: %d\n", num1, num2, or_result);
+//     printf("Bitwise XOR: %d\n", num1, num2, xor_result);
+
+//     return 0;
+// }
+
+
+
+
+
+// 37. Explain the difference between & (bitwise AND) and && (logical AND) operators with an example.
+
+// Bitwise AND 
+// It returns a new value where each bit is set to 1 if both corresponding bits of the operands are 1; otherwise, it is set to 0.
+
+// int a = 5;   // Binary: 0101
+// int b = 3;   // Binary: 0011
+
+// int result = a & b;  // Result: 0001 (1 in decimal)
+// printf("Bitwise AND result: %d\n", result);
+
+
+// Logical AND 
+// It evaluates two Boolean expressions (i.e., true or false) and returns true if both expressions are true, and false otherwise.
+
+// int a = 1;  // Non-zero value, considered true
+// int b = 0;  // Zero value, considered false
+
+// if (a && b) {
+//     printf("Both are true.\n");
+// } else {
+//     printf("At least one is false.\n");
+// }
+
+
+
+
+
+
+// 38. Write a program to demonstrate the use of the ternary operator for decision-making.
+
+// It is used as a shortcut way to write simpler one liner if else fucntions.
+
+// #include <stdio.h>
+
+// int main() {
+//     int num = 2;
+//     (num > 0) ? printf("The number is positive.\n") : printf("The number is either 0 or negative.\n");
+
+//     return 0;
+// }
+
+
+
+
+
+// 39. Explain what short-circuiting is in logical operators and demonstrate it with a program.
+
+// short-circuiting in logical operators is refferd to stopping as soon as the result is determined wihtout calculating the remaining operands,it means that if the result of the logical operation can be determined by evaluating just the first operand, then the second operand will not be evaluated.
+
+// In Logical And operator
+// If the left operand is false, the entire expression will be false, regardless of the right operand.
+
+// In Logical OR operator 
+// If the left operand is true, the entire expression will be true, regardless of the right operand.
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int a = 0, b = 5;
+
+//     // in logical AND (&&)
+//     if (a && (b / a)) {  // The second part (b / a) will not be evaluated because a is 0.
+//         printf("First condition: True\n");
+//     } else {
+//         printf("First condition: False\n");
+//     }
+
+//     // in logical OR (||)
+//     if (a || (b / a)) {  // The second part (b / a) will not be evaluated because a is 0.
+//         printf("Second condition: True\n");
+//     } else {
+//         printf("Second condition: False\n");
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// 40. Write a program to calculate the result of a complex expression involving all the arithmetic operators.
+
+// #include <stdio.h>
+
+// int main() {
+//     int a, b;
+//     float result;
+//     printf("Enter the first number (a): ");
+//     scanf("%d", &a);
+//     printf("Enter the second number (b): ");
+//     scanf("%d", &b);
+
+//     result = ((a + b) / 2.0) * 3 - (a % b) + (a / (float)b);
+//     printf("The result of the complex expression is: %.2f\n", result);
+
+//     return 0;
+// }
+
+
+
+
+// 
