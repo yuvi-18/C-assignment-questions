@@ -498,24 +498,100 @@
 // 27. Write a program that shifts a number left and right using the bitwise shift operator.
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int num, ls, rs;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    printf("Enter the number of positions to shift left: ");
-    scanf("%d", &ls);
-    printf("Enter the number of positions to shift right: ");
-    scanf("%d", &rs);
+// int main() {
+//     int num, ls, rs;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     printf("Enter the number of positions to shift left: ");
+//     scanf("%d", &ls);
+//     printf("Enter the number of positions to shift right: ");
+//     scanf("%d", &rs);
 
-    // Left Shift
-    int lsResult = num << ls;
-    printf("After left shifting by %d positions: %d\n", ls, lsResult);
+//     // Left Shift
+//     int lsResult = num << ls;
+//     printf("After left shifting by %d positions: %d\n", ls, lsResult);
 
-    // Right Shift
-    int rsResult = num >> rs;
-    printf("After right shifting by %d positions: %d\n", rs, rsResult);
-    
-    return 0;
-}
+//     // Right Shift
+//     int rsResult = num >> rs;
+//     printf("After right shifting by %d positions: %d\n", rs, rsResult);
+
+//     return 0;
+// }
+
+
+
+
+
+
+// 28. Demonstrate the use of the sizeof operator with different data types.
+
+
+// #include <stdio.h>
+
+// int main(){
+//     printf("Size of int: %zu bytes\n", sizeof(int));
+//     printf("Size of float: %zu bytes\n", sizeof(float));
+//     printf("Size of double: %zu bytes\n", sizeof(double));
+//     printf("Size of char: %zu byte\n", sizeof(char));
+//     printf("Size of long: %zu bytes\n", sizeof(long));
+//     printf("Size of short: %zu bytes\n", sizeof(short));
+//     return 0;
+// }
+
+
+
+
+
+
+// 29. Write a program to input two numbers and perform all the arithmetic operations on them.
+
+
+// #include <stdio.h>
+
+// int main() {
+//     float num1, num2;
+//     printf("Enter the first number: ");
+//     scanf("%f", &num1);
+//     printf("Enter the second number: ");
+//     scanf("%f", &num2);
+
+//     // Addition
+//     printf("Addition: %.2f\n",num1 + num2);
+
+//     // Subtraction
+//     printf("Subtraction: %.2f\n",num1 - num2);
+
+//     // Multiplication
+//     printf("Multiplication: %.2f\n",num1 * num2);
+
+//     // Division (Check if the second number is not zero to avoid division by zero)
+//     printf("Division: %.2f\n",num1 / num2);
+
+//     // Modulus
+//         printf("Modulus: %d\n",(int)num1 % (int)num2);
+//     return 0;
+// }
+
+
+
+
+
+// 30. Write a program to increment and decrement a variable using the ++ and -- operators.
+
+// #include <stdio.h>
+
+// int main(){
+//     int i = 10;
+//     printf("%d\n", i); // 10
+//     printf("%d\n", ++i); // 11
+//     printf("%d", --i); // 10
+//     return 0;
+// }
+
+
+
+
+
+// 31. What is the precedence of operators in C? Provide examples of how precedence affects expressions
