@@ -595,3 +595,144 @@
 
 
 // 31. What is the precedence of operators in C? Provide examples of how precedence affects expressions
+
+// precedence defines the order in which operators are evaluated in an expression. When an expression contains multiple operators, the operator precedence determines which operators are applied first.
+// example of how it affects the program
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int result1 = 5 + 3 * 2;
+//     printf("Result: %d\n", result1); // 11
+
+//     int result2 = (5 + 3) * 2;
+//     printf("Result: %d\n", result2); // 16
+
+//     return 0;
+// }
+
+// Parentheses () have the highest precedence, so 5 + 3 is evaluated first, giving 8. Then 8 * 2 is evaluated, resulting in 16.
+
+
+
+
+
+
+// 32. Write a program to compute the value of an arithmetic expression with mixed operators.
+
+// #include <stdio.h>
+
+// int main() {
+//     int a, b, c, d;
+//     int result;
+//     printf("Enter the value of a: ");
+//     scanf("%d", &a);
+//     printf("Enter the value of b: ");
+//     scanf("%d", &b);
+//     printf("Enter the value of c: ");
+//     scanf("%d", &c);
+//     printf("Enter the value of d: ");
+//     scanf("%d", &d);
+
+//     result = a + b * c - d / b + a % d;
+//     printf("The result of the expression is: %d\n", result);
+
+//     return 0;
+// }
+
+// First, multiplication (*), division (/), and modulus (%) are evaluated.
+// Then, addition and subtraction (+, -) are evaluated from left to right.
+
+
+
+
+
+
+// 33. Explain the difference between logical &&, ||, and ! operators with examples.
+
+
+// as follows:- 
+// The logical AND (&&) operator returns true (1) if both conditions on either side of it are true. Otherwise, it returns false (0).
+
+// #include <stdio.h>
+
+// int main() {
+//     int a = 5, b = 10;
+    
+//     // Using logical AND (&&)
+//     if (a > 0 && b > 0) {
+//         printf("Both conditions are true.\n"); // This will be printed
+//     } else {
+//         printf("One or both conditions are false.\n");
+//     }
+
+//     return 0;
+// }
+
+// The logical OR (||) operator returns true (1) if either of the conditions is true. If both conditions are false, it returns false (0).
+
+// #include <stdio.h>
+
+// int main() {
+//     int a = 5, b = -10;
+    
+//     // Using logical OR (||)
+//     if (a > 0 || b > 0) {
+//         printf("At least one condition is true.\n"); // This will be printed
+//     } else {
+//         printf("Both conditions are false.\n");
+//     }
+
+//     return 0;
+// }
+
+
+// Logical not operator returns true (1) if the condition is false, and false (0) if the condition is true.
+
+// #include <stdio.h>
+
+// int main() {
+//     int a = 5;
+    
+//     // Using logical NOT (!)
+//     if (!(a < 0)) {
+//         printf("The value of a is not negative.\n"); // This will be printed
+//     } else {
+//         printf("The value of a is negative.\n");
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// 34. Write a program to find the result of a comparison between two floating-point numbers.
+
+#include <stdio.h>
+
+int main() {
+    float num1, num2;
+
+    // Input two floating-point numbers
+    printf("Enter the first floating-point number: ");
+    scanf("%f", &num1);
+
+    printf("Enter the second floating-point number: ");
+    scanf("%f", &num2);
+
+    // Compare the two numbers
+    if (num1 > num2) {
+        printf("The first number (%.2f) is greater than the second number (%.2f).\n", num1, num2);
+    } else if (num1 < num2) {
+        printf("The first number (%.2f) is less than the second number (%.2f).\n", num1, num2);
+    } else {
+        printf("Both numbers are equal (%.2f).\n", num1);
+    }
+
+    return 0;
+}
