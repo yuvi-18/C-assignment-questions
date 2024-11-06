@@ -1013,22 +1013,219 @@
 // 46. Write a program to find the sum of digits of a number using a while loop.
 
 
+// #include <stdio.h>
+
+// int main() {
+//     int number, sum = 0, remainder;
+
+//     printf("Enter a number: ");
+//     scanf("%d", &number);
+
+//     while (number != 0) {
+//         remainder = number % 10;  // Get the last digit
+//         sum += remainder;         // Add it to sum
+//         number /= 10;             // Remove the last digit
+//     }
+
+//     // Output the result
+//     printf("Sum of digits: %d\n", sum);
+
+//     return 0;
+// }
+
+
+
+
+
+
+// 47. Write a program to reverse a given number using a while loop.
+
+// #include<stdio.h>
+
+// int main(){
+//     int number, reversed = 0,remainder;
+//     printf("Enter a number: ");
+//     scanf("%d", &number);
+
+//     while (number != 0)
+//     {
+//         remainder = number % 10;
+//         reversed = reversed * 10 + remainder;
+//         number /= 10;
+//     }
+//     printf("Reversed number: %d\n", reversed);
+
+//     return 0;
+// }
+
+
+
+
+
+
+// 48. Write a program to calculate the sum of the first n natural numbers using a for loop.
+
+
+// #include<stdio.h>
+
+// int main() {
+//     int n = 10, sum = 0;
+//     for (int i = 1; i <= n; i++) {
+//         sum += i;
+//     }
+//     printf("Sum of the first %d natural numbers is: %d\n", n, sum);
+
+//     return 0;
+// }
+
+
+
+
+// 49. Write a program to print the multiplication table of a given number using a for loop.
+
+
+// #include<stdio.h>
+
+// int main() {
+//     int number;
+//     printf("Enter a number: ");
+//     scanf("%d", &number);
+
+//     for (int i = 1; i <= 10; i++) {  // Loop from 1 to 10
+//         printf("%d x %d = %d\n", number, i, number * i);
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// 50. Write a program to print all the even numbers between 1 and 50 using a for loop
+
+
+// #include<stdio.h>
+
+// int main() {
+//     for (int i = 2; i <= 50; i += 2) { 
+//         printf("%d ", i);
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// 51. Write a program to find the sum of all odd numbers between 1 and 100 using a while loop.
+
+// #include <stdio.h>
+
+// int main() {
+//     int sum = 0;
+//     int i = 1;
+
+//     while (i <= 100) {
+//         sum += i;
+//         i += 2;
+//     }
+
+//     printf("The sum of all odd numbers between 1 and 100 is: %d\n", sum);
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+// 52. Write a program to print a pyramid pattern of stars using nested for loops.
+// try again
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int rows;
+//     printf("Enter the number of rows for the pyramid: ");
+//     scanf("%d", &rows);
+
+//     for (int i = 1; i <= rows; i++) {
+        
+//         for (int j = 1; j <= rows - i; j++) {
+//             printf(" ");
+//         }
+
+//         for (int k = 1; k <= (2 * i - 1); k++) {
+//             printf("*");
+//         }
+
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+// 53. Write a program to calculate the power of a number using a for loop.
+// do again
+
+// #include <stdio.h>
+
+// int main() {
+//     int base, exponent;
+//     int result = 1;
+//     printf("Enter the base: ");
+//     scanf("%d", &base);
+//     printf("Enter the exponent: ");
+//     scanf("%d", &exponent);
+
+//     for (int i = 1; i <= exponent; i++) {
+//         result *= base;
+//     }
+
+//     printf("%d raised to the power of %d is: %d\n", base, exponent, result);
+
+//     return 0;
+// }
+
+
+
+
+
+// 54. Write a program to check whether a number is an Armstrong number using a while loop.
+
 #include <stdio.h>
 
-int main() {
-    int number, sum = 0, remainder;
+int main(){
+    int number = 153, count = 0,power,sum, lastDigit, newDigit;
 
-    printf("Enter a number: ");
-    scanf("%d", &number);
-
-    while (number != 0) {
-        remainder = number % 10;  // Get the last digit
-        sum += remainder;         // Add it to sum
-        number /= 10;             // Remove the last digit
+    while (number != 0)
+    {
+        number /= 10;
+        count++;
     }
-
-    // Output the result
-    printf("Sum of digits: %d\n", sum);
+    number = 153;
+    power = count;
+    for (int i = 0; i <= power; i++)
+    {
+        lastDigit = number / 10;
+        newDigit = lastDigit * i;
+    }
+    printf("%d",  lastDigit);
+    
 
     return 0;
 }
