@@ -897,3 +897,138 @@
 
 
 // 41. Write a program to print numbers from 1 to 100 using a for loop.
+
+// #include <stdio.h>
+
+// int main() {
+//     for (int i = 1; i <= 100; i++) {
+//         printf("%d\n", i);
+//     }
+//     return 0;
+// }
+
+
+
+
+
+// 42. Write a program to calculate the factorial of a number using a for loop.
+
+// #include <stdio.h>
+
+// int main(){
+//     int n = 5;
+//     int fac = 1;
+//     for (int i = 1; i <= n; i++)
+//     {
+//         fac *= i;
+//     }
+//     printf("factorial is: %d", fac);
+//     return 0;
+// }
+
+
+
+
+
+
+// 43. Write a program to print the Fibonacci sequence up to a given number of terms using a while loop.
+
+
+// #include <stdio.h>
+
+// int main(){
+//     int n = 10, a = 0, b =1, nextTerm;
+//     printf("Fibonacci sequence: %d, %d, ", a,b);
+
+//     int i = 3;
+
+//     while (i <= n)
+//     {
+//         nextTerm = a + b;
+//         printf("%d, ", nextTerm);
+//         a = b;
+//         b = nextTerm;
+//         i++;
+//     }
+//     return 0;
+// }
+
+
+
+
+
+
+
+// 44. Explain the syntax of a do-while loop and write a program to print numbers from 10 to 1.
+
+// The do while loop in c is used to run a program repeatedly under a specified condition, the loop runs until the condition is true. the thing that separates do while loop from other loops is that it atleast runs once as in the do while loop syntax we can see first the code is executed after which the condition is checked.
+
+// #include <stdio.h>
+
+// int main(){
+//     int i = 10;
+//     do
+//     {
+//         printf("%d\n", i);
+//         i--;
+//     } while (i);
+    
+//     return 0;
+// }
+
+
+
+
+
+
+// 45. Write a program to check whether a given number is prime using a for loop.
+
+// #include <stdio.h>
+
+// int main() {
+//     int number;
+//     int isPrime = 1;
+//     printf("Enter a number: ");
+//     scanf("%d", &number);
+//     for (int i = 2; i < number; i++) {  
+//         if (number % i == 0) {
+//             isPrime = 0;
+//             break;
+//         }
+//     }
+//     if (isPrime) {
+//         printf("%d is prime.\n", number);
+//     } else {
+//         printf("%d is not prime.\n", number);
+//     }
+
+//     return 0;
+// }
+
+
+
+
+
+
+// 46. Write a program to find the sum of digits of a number using a while loop.
+
+
+#include <stdio.h>
+
+int main() {
+    int number, sum = 0, remainder;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    while (number != 0) {
+        remainder = number % 10;  // Get the last digit
+        sum += remainder;         // Add it to sum
+        number /= 10;             // Remove the last digit
+    }
+
+    // Output the result
+    printf("Sum of digits: %d\n", sum);
+
+    return 0;
+}
