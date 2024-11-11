@@ -57,12 +57,6 @@
 //     return 0;
 // }
 
-// Size of int is 4
-// Size of float is 4
-// Size of char is 1
-// Size of double is 8
-
-
 // the output will be in byte(s)
 // you should not use the %d and %f format specifiers to print the result of sizeof because the result of sizeof is of type size_t, which is an unsigned integer type.
 
@@ -416,13 +410,7 @@
 // #include <stdio.h>
 
 // int main() {
-//     int a, b;
-//     printf("Enter the value of a: ");
-//     scanf("%d", &a);
-//     printf("Enter the value of b: ");
-//     scanf("%d", &b);
-//     printf("Before swapping: a = %d, b = %d\n", a, b);
-//     // XOR swap algorithm
+//     int a = 1, b = 2;
 //     a = a ^ b;  // Step 1: a now holds the result of a ^ b
 //     b = a ^ b;  // Step 2: b now holds the original value of a
 //     a = a ^ b;  // Step 3: a now holds the original value of b
@@ -1207,25 +1195,26 @@
 
 // 54. Write a program to check whether a number is an Armstrong number using a while loop.
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main(){
-    int number = 153, count = 0,power,sum, lastDigit, newDigit;
+// int main(){
+//     int number = 153, count = 0,power,sum, lastDigit, newDigit;
 
-    while (number != 0)
-    {
-        number /= 10;
-        count++;
-    }
-    number = 153;
-    power = count;
-    for (int i = 0; i <= power; i++)
-    {
-        lastDigit = number / 10;
-        newDigit = lastDigit * i;
-    }
-    printf("%d",  lastDigit);
+//     while (number != 0)
+//     {
+//         number /= 10;
+//         count++;
+//     }
+//     number = 153;
+//     power = count;
+//     for (int i = 0; i <= power; i++)
+//     {
+//         lastDigit = number / 10;
+//         newDigit = lastDigit * i;
+//     }
+//     printf("%d",  lastDigit);
     
 
-    return 0;
-}
+//     return 0;
+// }
+
