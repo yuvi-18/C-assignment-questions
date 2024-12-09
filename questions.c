@@ -494,16 +494,16 @@
 //     scanf("%d", &num);
 //     printf("Enter the number of positions to shift left: ");
 //     scanf("%d", &ls);
-//     printf("Enter the number of positions to shift right: ");
-//     scanf("%d", &rs);
+//     // printf("Enter the number of positions to shift right: ");
+//     // scanf("%d", &rs);
 
 //     // Left Shift
 //     int lsResult = num << ls;
 //     printf("After left shifting by %d positions: %d\n", ls, lsResult);
 
 //     // Right Shift
-//     int rsResult = num >> rs;
-//     printf("After right shifting by %d positions: %d\n", rs, rsResult);
+//     // int rsResult = num >> rs;
+//     // printf("After right shifting by %d positions: %d\n", rs, rsResult);
 
 //     return 0;
 // }
@@ -1195,26 +1195,35 @@
 
 // 54. Write a program to check whether a number is an Armstrong number using a while loop.
 
-// #include <stdio.h>
+#include <stdio.h>
+#include<math.h>
 
-// int main(){
-//     int number = 153, count = 0,power,sum, lastDigit, newDigit;
+int main(){
+    int d1 = 153, digit, sum = 0, count = 0, n = 153;
+    while (n >0)
+    {
+        n = n /10;
+        count ++;
+    }
+    n = 153;
+    printf("%d\n", count);
 
-//     while (number != 0)
-//     {
-//         number /= 10;
-//         count++;
-//     }
-//     number = 153;
-//     power = count;
-//     for (int i = 0; i <= power; i++)
-//     {
-//         lastDigit = number / 10;
-//         newDigit = lastDigit * i;
-//     }
-//     printf("%d",  lastDigit);
+    while (d1 > 0)
+    {
+        digit = d1 % 10; 
+        sum = sum + pow(digit, count);
+        d1 = d1/10;
+    }
+    printf("%d\n", sum);
+    if (sum == n)
+    {
+        printf("aramstrong");
+    }
+    else
+    {
+        printf("nhi hai");
+    }
     
-
-//     return 0;
-// }
+    return 0;
+}
 
