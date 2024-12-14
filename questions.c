@@ -1199,13 +1199,16 @@
 // #include<math.h>
 
 // int main(){
-//     int d1 = 153, digit, sum = 0, count = 0, n = 153;
+//     int d1, digit, sum = 0, count = 0, n;
+//     printf("Enter any nymber: ");
+//     scanf("%d", &d1);
+//     n = d1;
 //     while (n >0)
 //     {
 //         n = n /10;
 //         count ++;
 //     }
-//     n = 153;
+//     n = d1;
 //     while (d1 > 0)
 //     {
 //         digit = d1 % 10; 
