@@ -1,272 +1,248 @@
-/*
-Q1 Develop a program about fundamental Data types C Programming. (Le., int, float and char types).
-#include <stdio.h>
+
+// Q1 Develop a program about fundamental Data types C Programming. (Le., int, float and char types).
+// #include <stdio.h>
 
 
-int main() {
-    // 1. Integer data type
-    int integerVar = 10;
-    printf("Integer Value: %d\n", integerVar);
+// int main() {
+//     // 1. Integer data type
+//     int integerVar = 10;
+//     printf("Integer Value: %d\n", integerVar);
 
-    // 2. Float data type
-    float floatVar = 3.14;
-    printf("Float Value: %.2f\n", floatVar);
+//     // 2. Float data type
+//     float floatVar = 3.14;
+//     printf("Float Value: %.2f\n", floatVar);
 
-    // 3. Character data type (char)
-    char charVar = 'A';
-    printf("Character Value: %c\n", charVar);
+//     // 3. Character data type (char)
+//     char charVar = 'A';
+//     printf("Character Value: %c\n", charVar);
 
-    // Performing operations with these data types
+//     // Performing operations with these data types
 
-    // Integer Operation: Addition
-    int sumInt = integerVar + 5;
-    printf("Sum of Integer Value and 5: %d\n", sumInt);
+//     // Integer Operation: Addition
+//     int sumInt = integerVar + 5;
+//     printf("Sum of Integer Value and 5: %d\n", sumInt);
 
-    // Float Operation: Multiplication
-    float productFloat = floatVar * 2.0;
-    printf("Product of Float Value and 2.0: %.2f\n", productFloat);
+//     // Float Operation: Multiplication
+//     float productFloat = floatVar * 2.0;
+//     printf("Product of Float Value and 2.0: %.2f\n", productFloat);
 
-    // Character Operation: Incrementing the character
-    char nextChar = charVar + 1; // Move to the next character in the ASCII sequence
-    printf("Next Character after '%c': %c\n", charVar, nextChar);
+//     // Character Operation: Incrementing the character
+//     char nextChar = charVar + 1; // Move to the next character in the ASCII sequence
+//     printf("Next Character after '%c': %c\n", charVar, nextChar);
 
-    return 0;
-}
-*/
-
-
-/*
-Q2 Write a C program that calculates the Simple Interest and Compound Interest. The Principal, Amount, Rate of Interest 
-and Time are entered through the keyboard.
+//     return 0;
+// }
 
 
 
-#include <stdio.h>
-#include <math.h>
 
-int main() {
-    // Declare variables
-    float principal, rate, time, amount, simpleInterest, compoundInterest;
-
-    // Get user input for Principal, Rate, Time, and Amount
-    printf("Enter the Principal amount: ");
-    scanf("%f", &principal);
-
-    printf("Enter the Rate of Interest (in percentage): ");
-    scanf("%f", &rate);
-
-    printf("Enter the Time (in years): ");
-    scanf("%f", &time);
-
-    // Calculate Simple Interest
-    simpleInterest = (principal * rate * time) / 100;
-
-    // Calculate Compound Interest using the formula: A = P(1 + r/n)^(nt)
-    // For simplicity, we assume the interest is compounded annually (n = 1)
-    amount = principal * pow((1 + rate / 100), time);
-    compoundInterest = amount - principal;
-
-    // Output the results
-    printf("\nSimple Interest: %.2f\n", simpleInterest);
-    printf("Compound Interest: %.2f\n", compoundInterest);
-
-    return 0;
-}
-
-*/
+// Q2 Write a C program that calculates the Simple Interest and Compound Interest. The Principal, Amount, Rate of Interest 
+// and Time are entered through the keyboard.
 
 
-/*
-Q3 Write a C program to demonstrate various type conversions.
 
-#include <stdio.h>
+// #include <stdio.h>
+// #include <math.h>
 
-int main() {
-    // Implicit Type Conversion (Automatic Conversion)
-    int integerVar = 10;
-    float floatVar = 5.5;
-    double doubleVar = 20.0;
+// int main() {
+//     // Declare variables
+//     float principal, rate, time, amount, simpleInterest, compoundInterest;
+
+//     // Get user input for Principal, Rate, Time, and Amount
+//     printf("Enter the Principal amount: ");
+//     scanf("%f", &principal);
+
+//     printf("Enter the Rate of Interest (in percentage): ");
+//     scanf("%f", &rate);
+
+//     printf("Enter the Time (in years): ");
+//     scanf("%f", &time);
+
+//     // Calculate Simple Interest
+//     simpleInterest = (principal * rate * time) / 100;
+
+//     // Calculate Compound Interest using the formula: A = P(1 + r/n)^(nt)
+//     // For simplicity, we assume the interest is compounded annually (n = 1)
+//     amount = principal * pow((1 + rate / 100), time);
+//     compoundInterest = amount - principal;
+
+//     // Output the results
+//     printf("\nSimple Interest: %.2f\n", simpleInterest);
+//     printf("Compound Interest: %.2f\n", compoundInterest);
+
+//     return 0;
+// }
+
+
+
+
+// Q3 Write a C program to demonstrate various type conversions.
+
+// #include <stdio.h>
+
+// int main() {
+//     // Implicit Type Conversion (Automatic Conversion)
+//     int integerVar = 10;
+//     float floatVar = 5.5;
     
-    // Implicit conversion (int to float)
-    float result1 = integerVar + floatVar;
-    printf("Implicit Conversion (int + float = float): %.2f\n", result1);
-    
-    // Implicit conversion (int to double)
-    double result2 = integerVar + doubleVar;
-    printf("Implicit Conversion (int + double = double): %.2f\n", result2);
-    
-    // Implicit conversion (float to double)
-    double result3 = floatVar + doubleVar;
-    printf("Implicit Conversion (float + double = double): %.2f\n", result3);
+//     // Implicit conversion (int to float)
+//     float result1 = integerVar + floatVar;
+//     printf("Implicit Conversion (int + float = float): %.2f\n", result1);
 
-    // Explicit Type Conversion (Type Casting)
-    // Cast float to int
-    int result4 = (int) floatVar;  // Explicitly cast float to int (decimal part is discarded)
-    printf("Explicit Conversion (float to int): %d\n", result4);
+//     // Explicit Type Conversion (Type Casting)
+//     // Cast float to int
+//     int result4 = (int) floatVar;  // Explicitly cast float to int (decimal part is discarded)
+//     printf("Explicit Conversion (float to int): %d\n", result4);
 
-    // Cast double to float
-    float result5 = (float) doubleVar;  // Explicitly cast double to float
-    printf("Explicit Conversion (double to float): %.2f\n", result5);
+//     return 0;
+// }
 
-    // Cast int to double
-    double result6 = (double) integerVar;  // Explicitly cast int to double
-    printf("Explicit Conversion (int to double): %.2f\n", result6);
 
-    return 0;
-}
 
-*/
+// Q4 write a program that accepts marks of five subjects and finds percentage and prints grades according to the following criteria:
+// Between:-
 
-/*
-Q4 write a program that accepts marks of five subjects and finds percentage and prints grades according to the following criteria:
-Between:-
+// 90-100% - Print "A"
 
-90-100% - Print "A"
+// 80-90% - Print "B
 
-80-90% - Print "B
+// 60-80% - Print 'C'
 
-60-80% - Print 'C'
-
-Below 60% - Print 'D'
+// Below 60% - Print 'D'
 
 
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    // Declare variables for marks and the percentage
-    float marks[5], total = 0, percentage;
-    char grade;
+// int main() {
+//     // Declare variables for marks and the percentage
+//     float marks[5], total = 0, percentage;
+//     char grade;
 
-    // Accept marks for five subjects
-    printf("Enter the marks for 5 subjects:\n");
+//     // Accept marks for five subjects
+//     printf("Enter the marks for 5 subjects:\n");
 
-    for (int i = 0; i < 5; i++) {
-        printf("Enter marks for subject %d: ", i + 1);
-        scanf("%f", &marks[i]);
-        total += marks[i];  // Add each subject's marks to total
-    }
+//     for (int i = 0; i < 5; i++) {
+//         printf("Enter marks for subject %d: ", i + 1);
+//         scanf("%f", &marks[i]);
+//         total += marks[i];  // Add each subject's marks to total
+//     }
 
-    // Calculate percentage
-    percentage = (total / 500) * 100;
+//     // Calculate percentage
+//     percentage = (total / 500) * 100;
 
-    // Display the percentage
-    printf("\nTotal Marks: %.2f / 500\n", total);
-    printf("Percentage: %.2f%%\n", percentage);
+//     // Display the percentage
+//     printf("\nTotal Marks: %.2f / 500\n", total);
+//     printf("Percentage: %.2f%%\n", percentage);
 
-    // Determine the grade based on percentage
-    if (percentage >= 90) {
-        grade = 'A';
-    } else if (percentage >= 80) {
-        grade = 'B';
-    } else if (percentage >= 60) {
-        grade = 'C';
-    } else {
-        grade = 'D';
-    }
+//     // Determine the grade based on percentage
+//     if (percentage >= 90) {
+//         grade = 'A';
+//     } else if (percentage >= 80) {
+//         grade = 'B';
+//     } else if (percentage >= 60) {
+//         grade = 'C';
+//     } else {
+//         grade = 'D';
+//     }
 
-    // Print the grade
-    printf("Grade: %c\n", grade);
+//     // Print the grade
+//     printf("Grade: %c\n", grade);
 
-    return 0;
-}
-
-*/
+//     return 0;
+// }
 
 
-/*
-Q5 Write a C program that swaps values of two variables using a third variable.
 
 
-#include <stdio.h>
-
-int main() {
-    // Declare two variables to store values
-    int a, b, temp;
-
-    // Get input values from the user
-    printf("Enter value for a: ");
-    scanf("%d", &a);
-
-    printf("Enter value for b: ");
-    scanf("%d", &b);
-
-    // Display values before swapping
-    printf("\nBefore swapping:\n");
-    printf("a = %d, b = %d\n", a, b);
-
-    // Swap the values using a third variable (temp)
-    temp = a;
-    a = b;
-    b = temp;
-
-    // Display values after swapping
-    printf("\nAfter swapping:\n");
-    printf("a = %d, b = %d\n", a, b);
-
-    return 0;
-}
-
-*/
-
-/*
-Q6 Write a C program to find the greatest of three numbers.
+// Q5 Write a C program that swaps values of two variables using a third variable.
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    // Declare three variables to store the numbers
-    int num1, num2, num3;
+// int main() {
+//     // Declare two variables to store values
+//     int a, b, temp;
 
-    // Get input values from the user
-    printf("Enter three numbers:\n");
-    printf("Enter number 1: ");
-    scanf("%d", &num1);
-    printf("Enter number 2: ");
-    scanf("%d", &num2);
-    printf("Enter number 3: ");
-    scanf("%d", &num3);
+//     // Get input values from the user
+//     printf("Enter value for a: ");
+//     scanf("%d", &a);
 
-    // Find the greatest number using if-else
-    if (num1 >= num2 && num1 >= num3) {
-        printf("\nThe greatest number is: %d\n", num1);
-    } else if (num2 >= num1 && num2 >= num3) {
-        printf("\nThe greatest number is: %d\n", num2);
-    } else {
-        printf("\nThe greatest number is: %d\n", num3);
-    }
+//     printf("Enter value for b: ");
+//     scanf("%d", &b);
 
-    return 0;
-}
+//     // Display values before swapping
+//     printf("\nBefore swapping:\n");
+//     printf("a = %d, b = %d\n", a, b);
 
-*/
+//     // Swap the values using a third variable (temp)
+//     temp = a;
+//     a = b;
+//     b = temp;
+
+//     // Display values after swapping
+//     printf("\nAfter swapping:\n");
+//     printf("a = %d, b = %d\n", a, b);
+
+//     return 0;
+// }
 
 
-/*
-Q7 Write a C program that tells whether a given year is a leap year or not
 
-#include <stdio.h>
+// Q6 Write a C program to find the greatest of three numbers.
 
-int main() {
-    int year;
 
-    // Get input year from the user
-    printf("Enter a year: ");
-    scanf("%d", &year);
+// #include <stdio.h>
 
-    // Check if the year is a leap year
-    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-        printf("%d is a Leap Year.\n", year);
-    } else {
-        printf("%d is not a Leap Year.\n", year);
-    }
+// int main() {
+//     // Declare three variables to store the numbers
+//     int num1, num2, num3;
 
-    return 0;
-}
+//     // Get input values from the user
+//     printf("Enter three numbers:\n");
+//     printf("Enter number 1: ");
+//     scanf("%d", &num1);
+//     printf("Enter number 2: ");
+//     scanf("%d", &num2);
+//     printf("Enter number 3: ");
+//     scanf("%d", &num3);
 
-*/
+//     // Find the greatest number using if-else
+//     if (num1 >= num2 && num1 >= num3) {
+//         printf("\nThe greatest number is: %d\n", num1);
+//     } else if (num2 >= num1 && num2 >= num3) {
+//         printf("\nThe greatest number is: %d\n", num2);
+//     } else {
+//         printf("\nThe greatest number is: %d\n", num3);
+//     }
+
+//     return 0;
+// }
+
+
+
+// Q7 Write a C program that tells whether a given year is a leap year or not
+
+// #include <stdio.h>
+
+// int main() {
+//     int year;
+
+//     // Get input year from the user
+//     printf("Enter a year: ");
+//     scanf("%d", &year);
+
+//     // Check if the year is a leap year
+//     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+//         printf("%d is a Leap Year.\n", year);
+//     } else {
+//         printf("%d is not a Leap Year.\n", year);
+//     }
+
+//     return 0;
+// }
+
 
 /*
 Q8 Write a C program to find the factorial of a given number.
