@@ -244,37 +244,31 @@
 // }
 
 
-/*
-Q8 Write a C program to find the factorial of a given number.
+
+// Q8 Write a C program to find the factorial of a given number.
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int number;
-    long long factorial = 1; // Long long is used to store large values of factorial
+// int main() {
+//     int n, fact = 1;
 
-    // Get input from the user
-    printf("Enter a number: ");
-    scanf("%d", &number);
+//     // Get input from user
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
 
-    // Check if the number is negative, as factorial is not defined for negative numbers
-    if (number < 0) {
-        printf("Factorial is not defined for negative numbers.\n");
-    } else {
-        // Calculate factorial using a loop
-        for (int i = 1; i <= number; i++) {
-            factorial *= i;  // Multiply factorial by current number
-        }
+//     // Calculate factorial
+//     for (int i = 1; i <= n; i++) {
+//         fact *= i;
+//     }
 
-        // Output the result
-        printf("Factorial of %d = %lld\n", number, factorial);
-    }
+//     // Output the result
+//     printf("Factorial of %d is %d\n", n, fact);
 
-    return 0;
-}
+//     return 0;
+// }
 
-*/
+
 
 /*
 Q9  Write a C program to print sum of even and odd numbers from 1 to N numbers
