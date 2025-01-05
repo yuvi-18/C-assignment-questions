@@ -301,49 +301,49 @@ int main() {
 
 */
 
-/*
-Q10 Write a C program to print the Fibonacci series.
+
+// Q10 Write a C program to print the Fibonacci series.
 
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int terms, first = 0, second = 1, next;
+// int main() {
+//     int terms, first = 0, second = 1, next;
 
-    // Get input from the user for number of terms
-    printf("Enter the number of terms: ");
-    scanf("%d", &terms);
+//     // Get input from the user for number of terms
+//     printf("Enter the number of terms: ");
+//     scanf("%d", &terms);
 
-    // Print the first two terms of the Fibonacci series
-    printf("Fibonacci Series: ");
+//     // Print the first two terms of the Fibonacci series
+//     printf("Fibonacci Series: ");
 
-    // Handle the case when terms is less than or equal to 0
-    if (terms <= 0) {
-        printf("Please enter a positive integer greater than 0.\n");
-    } else if (terms == 1) {
-        printf("%d\n", first);  // Only print the first term
-    } else {
-        // Print the first two terms
-        printf("%d %d ", first, second);
+//     // Handle the case when terms is less than or equal to 0
+//     if (terms <= 0) {
+//         printf("Please enter a positive integer greater than 0.\n");
+//     } else if (terms == 1) {
+//         printf("%d\n", first);  // Only print the first term
+//     } else {
+//         // Print the first two terms
+//         printf("%d %d ", first, second);
 
-        // Calculate and print the next terms in the series
-        for (int i = 3; i <= terms; i++) {
-            next = first + second;
-            printf("%d ", next);
+//         // Calculate and print the next terms in the series
+//         for (int i = 3; i <= terms; i++) {
+//             next = first + second;
+//             printf("%d ", next);
 
-            // Update first and second for the next iteration
-            first = second;
-            second = next;
-        }
-        printf("\n");
-    }
+//             // Update first and second for the next iteration
+//             first = second;
+//             second = next;
+//         }
+//         printf("\n");
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 
-*/
+
 
 /*
 Q11 Write a C program to check whether the entered number is prime or not.
