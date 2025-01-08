@@ -4,30 +4,22 @@
 
 
 // int main() {
-//     // 1. Integer data type
 //     int integerVar = 10;
 //     printf("Integer Value: %d\n", integerVar);
 
-//     // 2. Float data type
 //     float floatVar = 3.14;
 //     printf("Float Value: %.2f\n", floatVar);
 
-//     // 3. Character data type (char)
 //     char charVar = 'A';
 //     printf("Character Value: %c\n", charVar);
 
-//     // Performing operations with these data types
-
-//     // Integer Operation: Addition
 //     int sumInt = integerVar + 5;
 //     printf("Sum of Integer Value and 5: %d\n", sumInt);
 
-//     // Float Operation: Multiplication
 //     float productFloat = floatVar * 2.0;
 //     printf("Product of Float Value and 2.0: %.2f\n", productFloat);
 
-//     // Character Operation: Incrementing the character
-//     char nextChar = charVar + 1; // Move to the next character in the ASCII sequence
+//     char nextChar = charVar + 1;
 //     printf("Next Character after '%c': %c\n", charVar, nextChar);
 
 //     return 0;
@@ -345,117 +337,114 @@ int main() {
 
 
 
-/*
-Q11 Write a C program to check whether the entered number is prime or not.
+
+// Q11 Write a C program to check whether the entered number is prime or not.
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int number, i, isPrime = 1;
+// int main() {
+//     int number, i, isPrime = 1;
 
-    // Get input from the user
-    printf("Enter a number: ");
-    scanf("%d", &number);
+//     // Get input from the user
+//     printf("Enter a number: ");
+//     scanf("%d", &number);
 
-    // Check if the number is less than or equal to 1, as prime numbers are greater than 1
-    if (number <= 1) {
-        isPrime = 0;
-    } else {
-        // Check if the number is divisible by any number from 2 to sqrt(number)
-        for (i = 2; i * i <= number; i++) {
-            if (number % i == 0) {
-                isPrime = 0;  // Number is not prime if it is divisible by i
-                break;
-            }
-        }
-    }
+//     // Check if the number is less than or equal to 1, as prime numbers are greater than 1
+//     if (number <= 1) {
+//         isPrime = 0;
+//     } else {
+//         // Check if the number is divisible by any number from 2 to sqrt(number)
+//         for (i = 2; i * i <= number; i++) {
+//             if (number % i == 0) {
+//                 isPrime = 0;  // Number is not prime if it is divisible by i
+//                 break;
+//             }
+//         }
+//     }
 
-    // Output result
-    if (isPrime) {
-        printf("%d is a prime number.\n", number);
-    } else {
-        printf("%d is not a prime number.\n", number);
-    }
+//     // Output result
+//     if (isPrime) {
+//         printf("%d is a prime number.\n", number);
+//     } else {
+//         printf("%d is not a prime number.\n", number);
+//     }
 
-    return 0;
-}
-
-*/
-
-/*
-Q12 Write a C program to find the sum of digits of the entered number.
+//     return 0;
+// }
 
 
-#include <stdio.h>
 
-int main() {
-    int number, sum = 0;
-
-    // Get input from the user
-    printf("Enter a number: ");
-    scanf("%d", &number);
-
-    // If the number is negative, make it positive for simplicity
-    if (number < 0) {
-        number = -number;
-    }
-
-    // Calculate the sum of digits
-    while (number != 0) {
-        sum += number % 10;  // Add the last digit to sum
-        number /= 10;         // Remove the last digit
-    }
-
-    // Output the result
-    printf("Sum of digits: %d\n", sum);
-
-    return 0;
-}
-
-*/
+// Q12 Write a C program to find the sum of digits of the entered number.
 
 
-/*
-Q13 Write a C program to find the minimum and maximum element of the array.
+// #include <stdio.h>
+
+// int main() {
+//     int number, sum = 0;
+
+//     // Get input from the user
+//     printf("Enter a number: ");
+//     scanf("%d", &number);
+
+//     // If the number is negative, make it positive for simplicity
+//     if (number < 0) {
+//         number = -number;
+//     }
+
+//     // Calculate the sum of digits
+//     while (number != 0) {
+//         sum += number % 10;  // Add the last digit to sum
+//         number /= 10;         // Remove the last digit
+//     }
+
+//     // Output the result
+//     printf("Sum of digits: %d\n", sum);
+
+//     return 0;
+// }
 
 
-#include <stdio.h>
 
-int main() {
-    int n;
 
-    // Get the number of elements in the array
-    printf("Enter the number of elements in the array: ");
-    scanf("%d", &n);
+// Q13 Write a C program to find the minimum and maximum element of the array.
 
-    // Declare an array of size n
-    int arr[n];
 
-    // Input array elements
-    printf("Enter %d elements:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+// #include <stdio.h>
 
-    // Initialize min and max variables with the first element of the array
-    int min = arr[0], max = arr[0];
+// int main() {
+//     int n;
 
-    // Traverse the array to find min and max
-    for (int i = 1; i < n; i++) {
-        if (arr[i] < min) {
-            min = arr[i];  // Update min if current element is smaller
-        }
-        if (arr[i] > max) {
-            max = arr[i];  // Update max if current element is larger
-        }
-    }
+//     // Get the number of elements in the array
+//     printf("Enter the number of elements in the array: ");
+//     scanf("%d", &n);
 
-    // Output the results
-    printf("Minimum element in the array: %d\n", min);
-    printf("Maximum element in the array: %d\n", max);
+//     // Declare an array of size n
+//     int arr[n];
 
-    return 0;
-}
+//     // Input array elements
+//     printf("Enter %d elements:\n", n);
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
 
-*/
+//     // Initialize min and max variables with the first element of the array
+//     int min = arr[0], max = arr[0];
+
+//     // Traverse the array to find min and max
+//     for (int i = 1; i < n; i++) {
+//         if (arr[i] < min) {
+//             min = arr[i];  // Update min if current element is smaller
+//         }
+//         if (arr[i] > max) {
+//             max = arr[i];  // Update max if current element is larger
+//         }
+//     }
+
+//     // Output the results
+//     printf("Minimum element in the array: %d\n", min);
+//     printf("Maximum element in the array: %d\n", max);
+
+//     return 0;
+// }
+
