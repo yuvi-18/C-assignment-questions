@@ -13,6 +13,7 @@
 // Definition: Stores an integer.
 // Size: 4 bytes.
 
+
 // long:
 // Definition: Stores a larger integer.
 // Size: 4 bytes (32-bit system) or 8 bytes (64-bit system).
