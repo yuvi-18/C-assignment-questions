@@ -114,20 +114,16 @@ int main() {
         scanf(" %c", &choice);
 
         switch (choice) {
-            case 'T':
-            case 't':
+            case 'T':case 't':
                 convertTemperature();
                 break;
-            case 'C':
-            case 'c':
+            case 'C':case 'c':
                 convertCurrency();
                 break;
-            case 'M':
-            case 'm':
+            case 'M':case 'm':
                 convertMass();
                 break;
-            case 'Q':
-            case 'q':
+            case 'Q':case 'q':
                 printf("Exiting the program. Goodbye!\n");
                 return 0;
             default:
