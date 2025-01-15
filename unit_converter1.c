@@ -50,7 +50,7 @@ void convertCurrency() {
 
     switch (option) {
         case 1:
-            converted = amount * 82.0; // Example rate: 1 USD = 82 INR
+            converted = amount * 86.0; // Example rate: 1 USD = 82 INR
             printf("%.2f USD = %.2f INR\n", amount, converted);
             break;
         case 2:
